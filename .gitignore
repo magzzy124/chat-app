@@ -1,3 +1,11 @@
+#my ignores
+**/test.*
+WebsocketServer/index.*
+WebsocketServer/*.exe
+WebsocketServer/client
+WebsocketServer/client.c
+server/userImages/*
+
 # Logs
 logs
 *.log
@@ -13,7 +21,7 @@ dist-ssr
 *.local
 
 # Editor directories and files
-.vscode/*
+**/.vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store

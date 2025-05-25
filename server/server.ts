@@ -31,7 +31,7 @@ import { initializeWs } from "./weboscket.js";
 import multer from "multer";
 const ws = initializeWs();
 
-const upload = multer({ dest: "uploads/" });
+const upload = multer({ dest: "userImages/" });
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
