@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+#root {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  border-radius: 25px;
+}
+.logout {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 20px;
+}
+.loginWrapper {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+}

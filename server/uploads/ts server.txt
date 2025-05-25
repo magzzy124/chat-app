@@ -1,0 +1,11 @@
+login name
+serveradmin
+
+password
+nAHW5llC
+
+api key
+BADpBOMHi_BnRw4LZnamqRAX0vg6kWvlCClIA9X
+
+server admin privilege key
+JiFKLc2VvhvTw9S6glE8OQsG6fIYXfQgw3jxD9Gy

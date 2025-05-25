@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "strict": true,
+    "baseUrl": "."
+  },
+  "include": ["./**/*.ts", "../src/assets/types/*.ts"],
+  "exclude": ["node_modules"]
+}
