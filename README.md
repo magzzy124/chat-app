@@ -28,14 +28,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A simple chat application with WebSocket integration, written in C.
-Why in C you might ask?
-Well because I wanted to test myself and also see how it ALL actually works.
-And because of this I've learned quite a bit about low level networking, mainly TCP.
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+A simple React chat application with WebSocket integration written in C.<br>
+Why in C you might ask?<br>
+Well because I wanted to test myself and also see how it ALL actually works.<br>
+And because of this I've learned quite a bit about low level networking, mainly TCP.<br>
 
 
 ### Built With
