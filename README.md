@@ -81,14 +81,7 @@ And because of this I've learned quite a bit about low level networking, mainly 
 
 3. Compile and run the C WebSocket server:
 
-   #### On Windows (with Cygwin/MSYS2/WSL):
-   ```sh
-   cd /cygdrive/c/Users/danil/Documents/ViteReact/chat-app/WebsocketServer
-   gcc -o server server.c db_utils.c -lssl -lcrypto -I/usr/include/mysql -L/usr/lib/mysql -lmysqlclient
-   ./server
-   ```
-
-   #### On Linux:
+   #### On Windows (with Cygwin/MSYS2/WSL) or on Linux:
    ```sh
    cd ~/chat-app/WebsocketServer
    gcc -o server server.c db_utils.c -lssl -lcrypto -I/usr/include/mysql -L/usr/lib/mysql -lmysqlclient
