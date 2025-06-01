@@ -1,4 +1,5 @@
 #include "db_utils.h"
+#include "env_loader.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include<string.h>
@@ -31,16 +32,32 @@ int delete_group(MYSQL *conn, int groupId) {
 }
 
 MYSQL *connect_db() {
+  load_env_file("../.env");  
+
+  const char* host = getenv("DATABASE_HOST");
+  const char* user = getenv("DATABASE_USERNAME");
+  const char* pass = getenv("DATABASE_PASSWORD");
+  const char* dbname = getenv("DATABASE_NAME");
+
+  if (!user || !pass || !dbname) {
+    fprintf(stderr, "Missing required environment variables.\n");
+    return NULL;
+  }
+
+  if (!host) host = "127.0.0.1";  
+
   MYSQL *conn = mysql_init(NULL);
   if (conn == NULL) {
     fprintf(stderr, "MariaDB initialization failed\n");
     return NULL;
   }
-  if (mysql_real_connect(conn, HOST, USER, PASS, DBNAME, PORT, NULL, 0) == NULL) {
+
+  if (mysql_real_connect(conn, host, user, pass, dbname, 0, NULL, 0) == NULL) {
     fprintf(stderr, "Connection failed: %s\n", mysql_error(conn));
     mysql_close(conn);
     return NULL;
   }
+
   printf("Connected to MariaDB database successfully!\n");
   return conn;
 }
