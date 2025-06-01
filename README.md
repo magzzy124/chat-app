@@ -108,7 +108,7 @@ In this way, you can see in realtime how messages are being sent, how the seen/s
 - [ ] Add the ability to edit and remove a message
 - [ ] Host the application on a VPS, so that everyone can use a demo
     - [ ] Store the messages in the local database (only after the app is hosted)
-
+- [ ] Add a mobile version
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
