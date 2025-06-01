@@ -15,14 +15,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#security-warning">Security Warning</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -48,10 +44,6 @@ And because of this I've learned quite a bit about low level networking, mainly 
 
 
 ## Getting Started
-
-### Prerequisites
-
-This is an example of how to list the tools required to run the application and how to install them.
 
 #### Required Tools
 
@@ -107,10 +99,13 @@ This is an example of how to list the tools required to run the application and 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Easiest way to the this app is to create 2 guest accounts on 2 different tabs. (This app uses session storage) </br>
+In this way, you can see in realtime how messages are being sent, how the seen/sent status works, group creations etc.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+> ⚠️ **Warning**
+>
+> This application does **not** implement SSL encryption. It is intended for **local development use only**.
+> Do **not** deploy this to the public internet without adding proper HTTPS and other security measures.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,15 +114,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [ ] Add SSL encryption on the websocket server
+- [ ] Add the ability to edit and remove a message
+- [ ] Host the application on a VPS, so that everyone can use a demo
+    - [ ] Store the messages in the local database (only after the app is hosted)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
