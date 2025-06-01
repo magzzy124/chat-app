@@ -38,7 +38,6 @@ And because of this I've learned quite a bit about low level networking, mainly 
 * ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 * [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
   
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -106,7 +105,6 @@ In this way, you can see in realtime how messages are being sent, how the seen/s
 > This application does **not** implement SSL encryption. It is intended for **local development use only**.
 > Do **not** deploy this to the public internet without adding proper HTTPS and other security measures.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -118,7 +116,6 @@ In this way, you can see in realtime how messages are being sent, how the seen/s
 - [ ] Host the application on a VPS, so that everyone can use a demo
     - [ ] Store the messages in the local database (only after the app is hosted)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
