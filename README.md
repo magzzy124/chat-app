@@ -45,7 +45,7 @@ And because of this I've learned quite a bit about low level networking, mainly 
 
 ## Getting Started
 
-#### Required Tools
+#### Prerequisites
 
 - **npm**
   ```sh
