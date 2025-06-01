@@ -1,12 +1,15 @@
 import mysql from "mysql2";
+import dotenv from "dotenv";
 // import { wsInit } from "./initalizeWsConnection.js"; const websocket = wsInit();
+dotenv.config({ path: "../.env" });
+console.log(process.env.DATABASE_USERNAME);
 
 const pool = mysql
   .createPool({
     host: "127.0.0.1",
-    user: "root",
-    password: "root",
-    database: "chatusers",
+    user: process.env.DATABASE_USERNAME,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE_NAME,
   })
   .promise();
 

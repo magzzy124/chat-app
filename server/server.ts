@@ -36,8 +36,12 @@ const upload = multer({ dest: "userImages/" });
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+import dotenv from "dotenv";
+dotenv.config({ path: "../.env" });
+const JWT_KEY = process.env.JWT_KEY;
+
 function extractJWTUsername(jwtToken: string) {
-  const payload = jwt.verify(jwtToken, "hello");
+  const payload = jwt.verify(jwtToken, JWT_KEY);
   const { username } = payload;
   return username;
 }
@@ -58,7 +62,7 @@ async function authenticate(req, res, next) {
 
   if (token) {
     try {
-      jwt.verify(token, "hello");
+      jwt.verify(token, JWT_KEY);
       next();
       return;
     } catch (err) {
@@ -81,7 +85,7 @@ app.post("/login", async (req, res) => {
         .json({ message: "Username or password are not correct!" });
       return;
     }
-    const token = jwt.sign({ username, password }, "hello", {
+    const token = jwt.sign({ username, password }, JWT_KEY, {
       expiresIn: "4h",
     });
     res.json({
@@ -312,7 +316,7 @@ app.get("/loginAsGuest", async (req, res) => {
     const username = `User${Math.floor(Math.random() * 1000)}`;
     const password = Math.floor(Math.random() * 1000);
     await addUser(username, password);
-    const token = jwt.sign({ username, password }, "hello", {
+    const token = jwt.sign({ username, password }, JWT_KEY, {
       expiresIn: "4h",
     });
     res.json({

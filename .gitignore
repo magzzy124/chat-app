@@ -5,6 +5,7 @@ WebsocketServer/*.exe
 WebsocketServer/client
 WebsocketServer/client.c
 server/userImages/*
+.env
 
 # Logs
 logs

@@ -14,7 +14,7 @@ export function initializeWs() {
     };
 
     websocket.onerror = (error) => {
-      console.error("Websocket error:", error);
+      // console.error("Websocket error:", error);
     };
 
     websocket.onclose = () => {

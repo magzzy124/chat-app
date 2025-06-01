@@ -14,6 +14,7 @@
     "@tanstack/react-query": "^5.72.1",
     "@tanstack/react-query-devtools": "^5.72.2",
     "croppie": "^2.6.5",
+    "dotenv": "^16.5.0",
     "jwt-decode": "^4.0.0",
     "lucide-react": "^0.503.0",
     "react": "^18.3.1",
