@@ -15,7 +15,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#security-warning">Security Warning</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
   </ol>
 </details>
