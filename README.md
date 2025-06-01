@@ -90,7 +90,7 @@ And because of this I've learned quite a bit about low level networking, mainly 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Easiest way to the this app is to create 2 guest accounts on 2 different tabs. (This app uses session storage) </br>
+Easiest way to test this app is to create 2 guest accounts on 2 different tabs. (This app uses session storage) </br>
 In this way, you can see in realtime how messages are being sent, how the seen/sent status works, group creations etc.
 
 > ⚠️ **Warning**
