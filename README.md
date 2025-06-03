@@ -83,8 +83,8 @@ And because of this I've learned quite a bit about low level networking, mainly 
 
    #### On Windows (with Cygwin/MSYS2/WSL) or on Linux:
    ```sh
-   cd ~/chat-app/WebsocketServer
-   gcc -o server server.c db_utils.c -lssl -lcrypto -I/usr/include/mysql -L/usr/lib/mysql -lmysqlclient
+   cd ../WebsocketServer
+   gcc -o server server.c db_utils.c env_loader.c -lssl -lcrypto -I/usr/include/mysql -L/usr/lib/mysql -lmysqlclient
    ./server
    ```
 
