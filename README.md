@@ -1,4 +1,4 @@
-<details>
+![image](https://github.com/user-attachments/assets/f3083bac-155b-41b2-b1e6-b8e478284e21)<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -22,6 +22,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
+![image](https://github.com/user-attachments/assets/b5c73f5e-3021-4ebe-a2c1-32006bf36a01)
 
 A simple React chat application with WebSocket integration written in C.<br>
 Why in C you might ask?<br>
