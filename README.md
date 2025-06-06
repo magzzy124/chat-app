@@ -83,8 +83,9 @@ And because of this I've learned quite a bit about low level networking, mainly 
    cd server
    npm install
    ```
-
-3. Compile and run the C WebSocket server:
+3. Use the SQL dump file located in the SQL folder to generate the database.
+4. Generate your env file based on the env.example file.
+5. Compile and run the C WebSocket server:
 
    #### On Windows (with Cygwin/MSYS2/WSL) or on Linux:
    ```sh
